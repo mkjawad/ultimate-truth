@@ -97,7 +97,7 @@ function App() {
   
     try {
       // Call FastAPI backend
-      const response = await fetch('http://localhost:8000/ask', {
+      const response = await fetch('http://localhost:8007/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: input })
